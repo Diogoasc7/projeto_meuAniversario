@@ -1,0 +1,37 @@
+@use '../variables';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        color: variables.$yellowPrincipal;
+        background-color: rgb(8, 8, 8);
+
+        &:hover {
+            background-color: variables.$black;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+
+        &--primary {
+            text-align: center;
+        }
+    } 
+
+    @media (max-width: 1024px) {
+        display: block;
+        align-items: center;
+
+        &--primary {
+            text-align: center;
+        }
+    }
+}

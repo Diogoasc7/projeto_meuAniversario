@@ -1,0 +1,41 @@
+@use 'variables';
+
+.footer {
+    background-color: variables.$black;
+    color: variables.$yellowPrincipal;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+
+    a {
+        color: variables.$yellowPrincipal;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 12px;
+        padding: 8px;
+
+        a {
+            font-size: 12px;
+        }
+    }
+}

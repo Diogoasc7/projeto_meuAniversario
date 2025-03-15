@@ -1,0 +1,17 @@
+{
+  "name": "projeto_meuaniversario",
+  "version": "1.0.0",
+  "description": "Site criado para marcar um contador do meu próximo aniversário",
+  "scripts": {
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3"
+  }
+}
